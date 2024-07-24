@@ -1,0 +1,9 @@
+# A Survey of Computer Architecture Simulation Techniques and Tools
+
+**Authors:** Ayaz Akram, Lina Sawalha
+**URL:** https://ieeexplore.ieee.org/document/8718630
+
+## Summary
+
+This is an article that aims to take an in depth look at six computer architechture simulators: gem5, MARSSx86, Multi2Sim, PTLsim, Sniper, and ZSim. In the article it is mentioned that there is not enough published material that compares and categorizes these simulators, and that is what they hope to accomplish in this publication. Moreover, this article hopes to give a detailed breakdown of the experimental error (defined as: any variance between a measurement taken during an experiment and the established values). Considering the goal of running a computer architecture simulator is to experiment with performance and power consumption of new component ideas, experimental error is a great metric to consider when choosing the simulator that best fits the experiment. 
+
