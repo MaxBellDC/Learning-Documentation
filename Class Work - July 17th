@@ -30,3 +30,6 @@ i. Functional Simulators
 - Unable to keep track of detailed microarchitectural parameters
 - Useful for testing the purposes of new instruction sets
 
+This image shows a block diagram of a functional simulator
+![Functional](https://github.com/user-attachments/assets/cb4d9b39-eb91-4752-8955-b2541b21f303)
+
