@@ -175,3 +175,58 @@ The four principles that are used to compare the simulation models are:
 **Flexibility:** the configurability of the simulator and how flexible the simulator is to modify structures<br>
 **User friendliness:** how easy it is for users to learn how to use a simulator, modify it, and run different experiments<br>
 
+## Critical Analysis
+
+### Three Major Advantages of Computing Applications
+
+**1. Testing theoreticl research:** The main goal when utilizing a simulator is to test theoretical research and if the new research can lead to increased power output and energy efficiency. Being able to test this through simulation is a much more ideal scenario than going through tedious hardware related testing. Modern simulation methods offer quite a reliable method for evaluating the performance increases that different architechtures and microarchitechtures will provide.
+
+**2. Educational value:** The ability to interact with simulators is intrumental in understanding the complex processes that make computers function. Being able to tinker with a simulator can be a huge benefit to those that hope to learn about the inner functions of a processor. 
+
+**3. Stress testing:** The ability to simulate stress tests with different levels of complexity allows for an introspective view depicting how a piece of hardware can be utilized. Stress testing can also point out flaws in the architechture or microarchitechture that may have not been evident without having been tested.
+
+### Two Potential Limitations
+
+**1 Unable to handle multi-threaded applications:** Certain simulation methods face difficultis in efficiently handling multi-threaded simulations. This deficiency reduces how effective these simulations can be for modern multi-core and multi-threaded systems, which are only increasing in relevance. This poses a substantial challenge, but efforts to alleviate this deficiency are in progress.
+
+**2. Slow Simulation:** Some modern simulations can consist of billions or trillions of instructions, which can take a long time (the paper mentions it can take a few hours to several days). The level of synchronization and resource management that multi-core and multiprocessor simulations demand only increase this simulation time. Some simulation methods such as sampling, parallel simulation, and FPGA acceleration are utilized to alleviate this issue, but more optimization needs to be present for this problem to be handled.
+
+## Application
+
+I can think of two applicable insights from this paper that can be of benefit during our final weeks in this course. 
+
+**1. Increasing fundamental understanding:** It goes without saying that this article is extremely technical and large portions of it go over my head. After reading it multiple times, though, the gaps in my understanding are slowly decreasing. The wealth of knowledge this article provides is beneficial to a beginner trying to understand computer architechture. I can now distingush between a timing simulator and a functional simulator which is something I wouldn't have been able to do without this article. Further reading is still necessary to be able to fully utilize the information presented in this paper. 
+
+**2. Practical application:** The methods described in the article can be directly applied to assignments and projects. For example, if we need to evaluate the performance of a processor design, we could use the simulation tools mentioned in the paper as well as the validation techniques to conduct thorough and accurate assessments. 
+
+# Part 2: Evaluating emulsiV
+
+## Summary
+
+emulsiV is a simulator that was designed to aid in understanding Virgule, a minimal processor built on the RISC-V architechture. This tool is an interactive simulator that provides a detailed look at the ALU, comparator, memory, program counter, bus, instruction register and general purpose registers. This simulator is customizable, but comes preloaded with some basic examples that can help a new user understand the functionality of the program. The program also offers an animation with controllable speed to help a user grasp how this program works. 
+
+## Advantages and Disadvantages
+
+### Three Advantages
+
+**1. Beginner friendly:** As mentioned above, the simulator is very beginner friendly and a great educational tool to understand complex operations inside a processor. The ability to have the processes animated in slow-motion helped me understand the fetch>decode>alu>compare>mem/reg>pc process that this program utilizes. 
+
+**2. Fully customizable:** This program supports full customization to the instruction set, which can further develop on the first point and makes this yet again, a great tool for developing an understanding of instruction handling in the processor. 
+
+**3. Versatile Output Support:** With the bility to handle text and bitmap graphics, emulsiV is versatile, catering to both simple demonstrations and more complex simulations.
+
+### Two Disadvantages
+
+**1. Limited customization:** emulsiV may offer limited options for customization or modification, restricting its flexibility for users who want to simulate unique or specific processor configurations.
+
+**2. Performance Issues:** As an educational tool, emulsiV might lack the performance needed for detailed, large-scale simulations, which could be a drawback for advanced research or development needs.
+
+## Comparison with Traditional Tools
+
+Compared to the previous simulation tools that were explored in this program, such as the CPU Visual Simulator, emulsiV is much more complex. While they are both educational tools, emulsiV allows for a broader understanding of the inner workings of the processor, while offering a more detailed breakdown of the process behind why the processor works the way that it does. In my opinion, emulsiV is easier to understand after reading the manual and watching the simulator go through some of the basic examples, such as the Hello example and the ASCII example. One thing that would be beneficial to include in emulsiV that is present in the Visual Simulator tool would be an explanantion of the microsteps. 
+
+## Practical Application
+
+### Hypothetical Project: Developing an Energy-Efficient Processor Simulation
+
+This project would aim to explore and optimize the energy efficiency of processors using the RISC-V architechture. By utilizing emulsiV, students could simulate multiple processor configurations and analyze the power consumption and performance trade-offs. emulsiV's detailed visualiztion of processor components will enable students to experiment with different design strategies to identify the most energy-efficient solutions. This practical approach would bolster the students fundamental understanding of RISC-V architechture and contribute to the development of eco-friendly computing technologies. 
